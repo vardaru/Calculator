@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Angulalrized Calculator</title>
+    <base href="/">
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/typescript/lib/typescript.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+    <script src="node_modules/angular2/bundles/router.dev.js"></script>
+    <script src="node_modules/angular2/bundles/http.dev.js"></script>
+</head>
+<body>
+<calculator></calculator>
+<script>
+    System.config({
+        transpiler: "typescript",
+        typescriptOptions: {emitDecoratorMetadata: true},
+        packages: {app: {defaultExtension: 'ts'}}
+    });
+    System.import('app/Components/Calculator.component.ts');
+</script>
+</body>
+</html>
