@@ -20,7 +20,7 @@ var Calculator = (function () {
     Calculator = __decorate([
         core_1.Component({
             selector: "calculator",
-            template: "\n    <div>\n        <h1>Calculator Service</h1>\n        <p>Add or multiply two numbers</p>\n        <input type=\"text\" #number1>\n        <input type=\"text\" #number2>\n        <button (click)=\"onMultiply(number1.value, number2.value)\">Multiply</button>\n        <button (click)=\"onAdd(number1.value, number2.value)\">Add</button>\n        <br>\n        <p>Result: {{result}}</p>\n    </div>\n\n    ",
+            template: "\n    <div class=\"row\">\n        <div class=\"page-header\">\n            <h1>Calculator Servisi</h1>\n        </div>\n        <p>Add or multiply two numbers</p>\n        <input type=\"text\" #number1>\n        <input type=\"text\" #number2>\n        <button (click)=\"onMultiply(number1.value, number2.value)\">Multiply</button>\n        <button (click)=\"onAdd(number1.value, number2.value)\">Add</button>\n        <br>\n        <p>Result: {{result}}</p>\n    </div>\n\n    ",
             providers: [CalculatorService_1.CalculatorService]
         })
     ], Calculator);

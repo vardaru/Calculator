@@ -5,8 +5,10 @@ import {bootstrap} from "angular2/platform/browser";
 @Component({
     selector:"calculator",
     template:`
-    <div>
-        <h1>Calculator Service</h1>
+    <div class="row">
+        <div class="page-header">
+            <h1>Calculator Servisi</h1>
+        </div>
         <p>Add or multiply two numbers</p>
         <input type="text" #number1>
         <input type="text" #number2>

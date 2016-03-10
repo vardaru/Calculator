@@ -11,9 +11,13 @@
     <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
     <script src="node_modules/angular2/bundles/router.dev.js"></script>
     <script src="node_modules/angular2/bundles/http.dev.js"></script>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
 </head>
 <body>
-<calculator></calculator>
+<div class="container" style="margin-top:10px">
+    <calculator></calculator>
+</div>
 <script>
     System.config({
         transpiler: "typescript",
@@ -22,5 +26,7 @@
     });
     System.import('app/Components/Calculator.component.ts');
 </script>
+<script type="application/javascript" src="js/jquery.js"></script>
+<script type="application/javascript" src="js/bootstrap.js"></script>
 </body>
 </html>
